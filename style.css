@@ -19,7 +19,7 @@ body {
     margin-top: 200px;
 }
   
-  .overlay {
+.overlay {
     background-color: rgba(0, 0, 0, 0.7); 
     color: white;
     text-align: center;
@@ -27,18 +27,31 @@ body {
     border-radius: 5px; 
 }
   
-  .overlay p {
+.overlay p {
     margin: 5px 0;
     font-size: 18px; 
     font-weight: bold;
 }
-.header{
-    text-align : center ;
-}
 
-.bouton{
-    color : red;
-}
+.bouton-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+.bouton {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    background-color:	#B22222 ;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    border-radius: 5px; 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); 
+  }
+
 
 .logo {
     display: flex;              
@@ -49,4 +62,23 @@ body {
 .logo img{
     max-width: 250px;           
     max-height: 250px;  
+}
+.logo-container {
+    text-align: center;
+    margin-top: 20px;
+}
+  
+
+.moving-image {
+    width: 200px;
+    animation: zoom 2s infinite alternate ease-in-out;
+}
+  
+@keyframes zoom {
+    from {
+      transform: scale(1); 
+    }
+    to {
+      transform: scale(1.2); 
+    }
 }
